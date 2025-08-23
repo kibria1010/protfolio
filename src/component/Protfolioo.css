@@ -1,6 +1,22 @@
-.footer {
-    bottom: 0;
-    position: absolute;
-    width: 90%;
-    height: 40px;
-}
+    .footer {
+        bottom: 0;
+        position: absolute;
+        width: 90%;
+        height: 40px;
+    }
+
+    .WelcomeComponent {
+        display: flex;
+        width: 100%; /* Or a specific width */
+        height: 20px; /* Or a specific height for the "line" */
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .segment {
+        flex: 1; /* Distributes available space equally */
+    }
+
+    .segment:last-child {
+        border-right: none; /* Remove border from the last segment */
+    }

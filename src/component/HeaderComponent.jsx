@@ -20,12 +20,6 @@ function HeaderComponent() {
                                 <li className="nav-item fs-5">
                                     { 
                                 
-                                        <Link className="nav-link" to="/">Resume</Link> 
-                                    }
-                                </li>
-                                <li className="nav-item fs-5">
-                                    { 
-                                
                                         <Link className="nav-link" to="/">Projects</Link> 
                                     }
                                 </li>
@@ -35,7 +29,13 @@ function HeaderComponent() {
                             <li className="nav-item fs-5">
                                 { 
                               
-                                    <Link className="nav-link" to="/">SocialMedia</Link>
+                                    <Link className="nav-link" to="https://github.com/kibria1010" target="_blank">Github</Link>
+                                }
+                            </li>
+                            <li className="nav-item fs-5">
+                                { 
+                              
+                                    <Link className="nav-link" to="https://www.linkedin.com/in/golam-kibria-0741ab1ab/" target="_blank">LinkedIn</Link>
                                 }
                             </li>
                             <li className="nav-item fs-5">
