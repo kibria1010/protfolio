@@ -4,8 +4,8 @@ function Dropdown() {
   const [selectedValue, setSelectedValue] = useState(''); // State to store the selected value
 
   const options = [
-    { label: 'Todo', value: 'option1' },
-    { label: 'Social Media Application (Users Post)', value: 'option2' },
+    { label: 'Todo', value: 'Todo' },
+    { label: 'Social Media Application (Users Post)', value: 'Users Post' },
   ];
 
   const handleChange = (event) => {
