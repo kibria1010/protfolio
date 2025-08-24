@@ -5,8 +5,8 @@ import FooterComponent from "./FoaterComponent"
 
 import './Protfolioo.css'
 import ContactComponent from "./ContactComponent";
-import ProjectComponent from "./ProjectComponent";
 import Dropdown from "./Dropdown";
+import Learning from "./Learning";
 
 export default function ProtfolioComponent() {
     return (
@@ -16,8 +16,8 @@ export default function ProtfolioComponent() {
                     <Routes>
                         <Route path='/' element={ <WelcomeComponent/> }/>
                         <Route path='/contact' element={ <ContactComponent/> }/>
-                        <Route path='/project' element={ <ProjectComponent/> }/>
                         <Route path='/dropdown' element={ <Dropdown/> }/>
+                        <Route path='/learning' element={ <Learning/> }/>
                     </Routes>
                      <FooterComponent/>
             </BrowserRouter>

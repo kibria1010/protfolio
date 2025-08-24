@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Video from './todo.webm'
 import Video2 from './users_post.webm'
-import Todo from './Todo.PNG'
+import { Link } from 'react-router-dom';
 
 function Dropdown() {
 
@@ -55,15 +55,19 @@ function Dropdown() {
                     <p> </p>
                 )}
                 
-                {!selectedValue  &&       
-                  <div class='mt-5'>  
-                    <figure> <img  style={{height: 500, width: 1000,}} src={Todo} alt="fireSpot"/></figure>
-                  </div>
-                }
+                {/*
+                  {!selectedValue  &&       
+                    <div class='mt-5'>  
+                      <figure> <img  style={{height: 500, width: 1000,}} src={Todo} alt="fireSpot"/></figure>
+                    </div>
+                  }
+                */}
 
-
-
+                {selectedValue=="Todo" && <p><Link className="nav-link" to="https://github.com/kibria1010/Todo_RestAPI" target="_blank">GitHubLink</Link></p>}
+                {selectedValue=="Users Post" && <p><Link className="nav-link" to="https://github.com/kibria1010/SocialMediaApplication_Users_Post_RESTful_API" target="_blank">GitHubLink</Link></p>}
+                {/*
                 {selectedValue=="Todo" && <p>You selected: {selectedValue}</p> }
+                */}
 
             </div>
         </div>

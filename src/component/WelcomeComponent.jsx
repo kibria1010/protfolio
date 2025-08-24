@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
 import mainLogo from'./kibria.jpg';
-import github from './github.png'
 
 function WelcomeComponent() {
 
@@ -29,6 +27,7 @@ function WelcomeComponent() {
                     </figure>
 
                     <a class="mt-3" href={require("./Md_Golam_Kibria_Resume.pdf")} download="Md_Golam_Kibria_Resume">Download Resume</a>
+
                 </nav>
 
             </div>
