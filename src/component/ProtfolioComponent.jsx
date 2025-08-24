@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HeaderComponent from "./HeaderComponent";
 import WelcomeComponent from "./WelcomeComponent";
-import FooterComponent from "./FoaterComponent";
+import FooterComponent from "./FoaterComponent"
 
 import './Protfolioo.css'
 import ContactComponent from "./ContactComponent";
@@ -19,7 +19,7 @@ export default function ProtfolioComponent() {
                         <Route path='/project' element={ <ProjectComponent/> }/>
                         <Route path='/dropdown' element={ <Dropdown/> }/>
                     </Routes>
-                    <FooterComponent/>
+                     <FooterComponent/>
             </BrowserRouter>
         </div>
     )

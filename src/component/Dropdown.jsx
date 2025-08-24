@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Video from './todo.webm'
+import Todo from './Todo.PNG'
 
 function Dropdown() {
+
   const [selectedValue, setSelectedValue] = useState(''); // State to store the selected value
 
   const options = [
@@ -21,7 +23,7 @@ function Dropdown() {
 
         <div class="segment">
            <h2 style={{textAlign: "center"}}>Projects</h2>
-            <hr></hr>
+            
 
             <div style={{textAlign: "center"}}>
                 <select id="my-dropdown" value={selectedValue} onChange={handleChange}>
@@ -30,17 +32,35 @@ function Dropdown() {
                     <option style={{textAlign: "center"}} key={option.value} value={option.value}>
                         {option.label}
                     </option>
+                    
                     ))}
                 </select>
-                {selectedValue && <p>You selected: {selectedValue}</p> &&       
+  
+                <hr></hr>
+  
+                {selectedValue === 'Todo' ? (
                   <div class="mt-5">
-                       <video src={Video} autoPlay="true"/>
+                       <video src={Video} controls="true" autoPlay="true" style={{height: 500, width: 1000,}} />
+                  </div>          
+                ) : (
+                    <p> </p>
+                )}
+                
+                {!selectedValue  &&       
+                  <div class='mt-5'>  
+                    <figure> <img  style={{height: 500, width: 1000,}} src={Todo} alt="fireSpot"/></figure>
                   </div>
                 }
+
+                {selectedValue=="Todo" && <p>You selected: {selectedValue}</p> }
+
             </div>
         </div>
 
-        <div class="segment"></div>
+        <div class="segment">
+
+          
+        </div>
     </div>
   );
 }

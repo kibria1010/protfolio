@@ -23,13 +23,8 @@ function WelcomeComponent() {
 
                <nav class="mt-3">
                     <figure>
-                        <img  
-                        style={{
-                        height: 400,
-                        width: 400,
-                        }}
+                        <img  style={{height: 400, width: 400,}}
                         src={mainLogo} alt="fireSpot"/>
-
                         <figcaption>Fig.1 - Md. Golam Kibria.</figcaption>
                     </figure>
 
