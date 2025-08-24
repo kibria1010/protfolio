@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+
 function HeaderComponent() {
 
 
@@ -20,7 +21,7 @@ function HeaderComponent() {
                                 <li className="nav-item fs-5">
                                     { 
                                 
-                                        <Link className="nav-link" to="/">Projects</Link> 
+                                        <Link className="nav-link" to="/dropdown">Projects</Link> 
                                     }
                                 </li>
                             </ul>
@@ -29,19 +30,18 @@ function HeaderComponent() {
                             <li className="nav-item fs-5">
                                 { 
                               
-                                    <Link className="nav-link" to="https://github.com/kibria1010" target="_blank">Github</Link>
+                                    <Link className="nav-link" to="https://github.com/kibria1010" target="_blank">GitHub</Link>
                                 }
                             </li>
                             <li className="nav-item fs-5">
                                 { 
-                              
                                     <Link className="nav-link" to="https://www.linkedin.com/in/golam-kibria-0741ab1ab/" target="_blank">LinkedIn</Link>
                                 }
                             </li>
                             <li className="nav-item fs-5">
                                 { 
                               
-                                    <Link className="nav-link" to="/">Contact</Link>
+                                    <Link className="nav-link" to="/contact">Contact</Link>
                                 }
                             </li>
                         </ul>

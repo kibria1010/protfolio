@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import mainLogo from'./kibria.jpg';
-import resume from './Md_Golam_Kibria_Resume.pdf'
+import github from './github.png'
 
 function WelcomeComponent() {
 
@@ -9,6 +10,11 @@ function WelcomeComponent() {
             <div class="segment"></div>
 
             <div class="segment">
+
+                <h2 style={{textAlign: "center"}}>Welcome!</h2>
+                <hr></hr>
+
+
                 <p style={{ color: 'black', fontSize: '16px' }}>
                     Hi! I’m a <strong>Java Spring Boot Developer</strong>. <br/>
                     Passionate about building modern, scalable, and user-friendly applications. <br/>

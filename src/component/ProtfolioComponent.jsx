@@ -4,6 +4,9 @@ import WelcomeComponent from "./WelcomeComponent";
 import FooterComponent from "./FoaterComponent";
 
 import './Protfolioo.css'
+import ContactComponent from "./ContactComponent";
+import ProjectComponent from "./ProjectComponent";
+import Dropdown from "./Dropdown";
 
 export default function ProtfolioComponent() {
     return (
@@ -12,6 +15,9 @@ export default function ProtfolioComponent() {
                     <HeaderComponent/>
                     <Routes>
                         <Route path='/' element={ <WelcomeComponent/> }/>
+                        <Route path='/contact' element={ <ContactComponent/> }/>
+                        <Route path='/project' element={ <ProjectComponent/> }/>
+                        <Route path='/dropdown' element={ <Dropdown/> }/>
                     </Routes>
                     <FooterComponent/>
             </BrowserRouter>
