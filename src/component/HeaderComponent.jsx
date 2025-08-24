@@ -10,7 +10,7 @@ function HeaderComponent() {
                 <div className="row">
                     <nav className="navbar navbar-expand-lg">
                         {/* <a className="navbar-brand ms-2 fs-2 fw-bold text-black" href="/">Md. Golam Kibria</a> */}
-                        <Link className="navbar-brand ms-2 fs-2 fw-bold text-black" to="/">Home</Link> 
+                        <Link className="navbar-brand ms-2 fs-2 fw-bold text-black" to="/">Md. Golam Kibria</Link> 
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav">
                                 <li className="nav-item fs-5">
@@ -22,18 +22,18 @@ function HeaderComponent() {
                                 <li className="nav-item fs-5">
                                     { 
                                 
-                                        <Link className="nav-link" to="/dropdown">Projects</Link> 
-                                    }
-                                </li>
-                                <li className="nav-item fs-5">
-                                    { 
-                                
                                         <Link className="nav-link" to="/learning">Education</Link> 
                                     }
                                 </li>
                             </ul>
                         </div>
                         <ul className="navbar-nav">
+                           <li className="nav-item fs-5">
+                                    { 
+                                
+                                        <Link className="nav-link" to="/dropdown">Projects</Link> 
+                                    }
+                                </li>
                             <li className="nav-item fs-5">
                                 { 
                               
