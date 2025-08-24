@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Video from './todo.webm'
+import Video2 from './users_post.webm'
 import Todo from './Todo.PNG'
 
 function Dropdown() {
@@ -45,12 +46,22 @@ function Dropdown() {
                 ) : (
                     <p> </p>
                 )}
+
+                {selectedValue === 'Users Post' ? (
+                  <div class="mt-5">
+                       <video src={Video2} controls="true" autoPlay="true" style={{height: 500, width: 1000,}} />
+                  </div>          
+                ) : (
+                    <p> </p>
+                )}
                 
                 {!selectedValue  &&       
                   <div class='mt-5'>  
                     <figure> <img  style={{height: 500, width: 1000,}} src={Todo} alt="fireSpot"/></figure>
                   </div>
                 }
+
+
 
                 {selectedValue=="Todo" && <p>You selected: {selectedValue}</p> }
 
